@@ -1,5 +1,5 @@
 .footer {
-    min-height: 630px;
+    height: 630px;
     position: relative;
 
     &__info {
@@ -54,5 +54,9 @@
     &__social {
         display: flex;
         justify-content: center;
+    }
+
+    &__map {
+        height: 650px;
     }
 }
