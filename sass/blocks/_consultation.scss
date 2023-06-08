@@ -1,0 +1,26 @@
+.consultation {
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    background: url(../../img/bg/third_bg.jpg) center center/cover no-repeat;
+
+    &__descr {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 80px;
+    }
+
+    .error {
+        text-align: center;
+        border: 2px solid red;
+        font-size: 14px;
+        margin-bottom: 17px;
+        
+    }
+
+    label.error {
+        color: white;
+        border: none;
+    }
+}
