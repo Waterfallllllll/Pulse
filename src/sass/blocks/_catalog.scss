@@ -76,9 +76,15 @@
             text-decoration: underline;
             text-transform: uppercase;
             position: absolute;
-            left: 50%;
+            left: 17%;
             bottom: 1px;
-            transform: translateX(calc(-50% - 17px));
+            top: 45%;
+            transform: translate(calc(-50% - 17px), 1%);
+
+            &_active {
+                    transform: translateX(-86%);
+                    margin-right: 20px;
+                }
         }
 
         &__title {
@@ -153,14 +159,9 @@
             }
         }
 
-
-        &__div {
-            
-        }
-
         &__list {
-            width: 57%;
-            margin-left: 147px;
+            width: 50%;
+            margin-left: 20px;
             transform: translateX(0%);
             padding-right: 20px;
             transition: 0.5s all;
@@ -172,25 +173,25 @@
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
-        }
 
-        &__li {
-            color: #555555;
-            font-size: 14px;
-            font-weight: 300;
-            text-align: left;
-            margin-bottom: 24px;
-            position: relative;
+            li {
+                color: #555555;
+                font-size: 14px;
+                font-weight: 300;
+                text-align: left;
+                margin-bottom: 24px;
+                position: relative;
 
-            &:before {
-                content: '';
-                width: 5px;
-                height: 5px;
-                background-color: $main-color;
-                position: absolute;
-                left: -14px;
-                transform: translateX(-50%);
-                top: 7px;
+                &:before {
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    position: absolute;
+                    left: -14px;
+                    transform: translateX(-50%);
+                    top: 7px;
+                }
             }
         }
     }
