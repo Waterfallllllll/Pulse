@@ -50,7 +50,7 @@ $(document).ready(function () {
                 e.preventDefault();
                 $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
                 $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-                $('.catalog-item__back').eq(i).toggleClass('catalog-item__back_active');
+                $('.catalog-item__div').eq(i).toggleClass('catalog-item__div_active');
             })
         });
     };
