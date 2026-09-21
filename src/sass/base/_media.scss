@@ -312,11 +312,11 @@
 		padding: 21px 6px 93px;
 
 		&__header {
-			font-size: 14px;
+			font-size: 20px;
 		}
 
 		&__subheader {
-			font-size: 7px;
+			font-size: 13px;
 		}
 
 		&__icons {
@@ -324,7 +324,7 @@
 		}
 
 		&__icon {
-			font-size: 6px;
+			font-size: 9px;
 
 			img {
 				width: 20px;
@@ -334,14 +334,14 @@
 
 		.button {
 			&_main {
-				width: 105px;
+				width: 150px;
 				height: 22px;
-				font-size: 6px;
+				font-size: 9px;
 			}
 		}
 
 		&__link {
-			font-size: 8px;
+			font-size: 10px;
 
 			a {
 				font-size: 8px;
@@ -354,14 +354,21 @@
 			font-size: 9px;
 		}
 
+		&__logo {
+			img {
+				width: 170%;
+			}
+		}
+
 		.button {
-			width: 75px;
+			width: 100px;
 			height: 17px;
-			font-size: 6px;
+			font-size: 9px;
 		}
 
 		&__official {
-			font-size: 5px;
+			display: none;
+			font-size: 10px;
 
 			span {
 				font-size: 8px;
@@ -374,19 +381,19 @@
 		padding: 26px 6px 26px;
 
 		&__descr-subheader {
-			width: 94px;
-			font-size: 6px;
+			width: 150px;
+			font-size: 10px;
 			margin-top: 8px;
 		}
 
 		&__descr-header {
-			font-size: 8px;
+			font-size: 12px;
 			margin-top: 10px;
 		}
 
 		&__item {
 			img {
-				width: 25px;
+				width: 35px;
 			}
 		}
 
@@ -485,6 +492,11 @@
 			height: 27px;
 			font-size: 7px;
 			line-height: 26px;
+		}
+
+		&-item__descr {
+			margin: 0 auto;
+			width: 200px;
 		}
 	}
 
