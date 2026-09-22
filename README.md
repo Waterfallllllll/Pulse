@@ -1,48 +1,48 @@
 # Pulse
 
-A one-page store for heart rate monitors: device matching based on fitness level, plus Garmin, Polar, and Suunto models.
+Одностраничный сайт магазина пульсометров: подбор устройства с учётом уровня подготовки и продажа моделей Garmin, Polar и Suunto.
 
-Includes section layout, responsive design, lead forms, modal windows, and a tabbed catalog.
+Реализовано: вёрстка секций, адаптив, формы заявки, модальные окна и каталог с вкладками.
 
-## What’s on the page
+## Что на странице
 
-- **Promo** — headline, benefits (fast matching, free delivery, consultation), and request buttons
-- **Advantages** — team experience, health, running coaching
-- **Consultation form** — name, phone, email
-- **Slider** — Polar watch cards
-- **Catalog** — tabs for fitness, running, and triathlon, with product cards (description and price)
-- **Customer reviews**
-- **Modals** — consultation and order for the selected model
+- **Промо-блок** — заголовок, преимущества (быстрый подбор, бесплатная доставка, консультация) и кнопки заявки
+- **Наши преимущества** — опыт команды, здоровье, обучение бегу
+- **Форма консультации** — имя, телефон, email
+- **Слайдер** — карточки часов Polar
+- **Каталог** — вкладки «Для фитнеса», «Для бега», «Для триатлона», карточки с описанием и ценой
+- **Отзывы клиентов**
+- **Модальные окна** — консультация и заказ выбранной модели
 
-## Stack
+## Стек
 
-- HTML, SCSS (BEM blocks in `src/sass`)
-- Gulp: style build, HTML minification, asset copy, BrowserSync
+- HTML, SCSS (BEM-блоки в `src/sass`)
+- Gulp: сборка стилей, минификация HTML, копирование ассетов, BrowserSync
 - jQuery, Slick, Animate.css, Wow.js
-- jQuery Validate and a phone input mask
-- PHPMailer for form submissions
+- jQuery Validate и маска телефона
+- PHPMailer для отправки заявок с форм
 
-## Structure
+## Структура
 
 ```
-src/          source files
+src/          исходники
   index.html
-  sass/       styles (blocks, variables, media)
-  js/         scripts and plugins
-  img/        images
-  icons/      icons
-  mailer/     email sending
-dist/         built site (served locally)
-gulpfile.js   build tasks
+  sass/       стили (блоки, переменные, медиа)
+  js/         скрипты и плагины
+  img/        изображения
+  icons/      иконки
+  mailer/     отправка писем
+dist/         собранный сайт (отдаёт локальный сервер)
+gulpfile.js   задачи сборки
 ```
 
-## Getting started
+## Запуск
 
-You need Node.js and npm.
+Нужны Node.js и npm.
 
 ```bash
 npm install
 npx gulp
 ```
 
-After that, a local server starts from the `dist` folder. Changes in `src` are picked up automatically.
+После запуска откроется локальный сервер из папки `dist`. Изменения в `src` подхватываются автоматически.
